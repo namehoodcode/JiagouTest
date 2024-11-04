@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerData : EntityData
 {
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        moveSpeed = 2f;
+        base.Start();
     }
 
     // Update is called once per frame

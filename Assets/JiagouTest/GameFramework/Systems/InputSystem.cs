@@ -21,6 +21,10 @@ public class InputSystem : BaseSystem
         {
             GameApp.gameEventSystem.PostEvent(EventDefine.StartChangeScene);
         }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            GameApp.gameEventSystem.PostEvent("onHealthChange");
+        }
         base.Update(dt);
     }
 

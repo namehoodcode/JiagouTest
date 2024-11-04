@@ -6,5 +6,11 @@ using UnityEngine;
 public class EntityData : MonoBehaviour
 {
     public float moveSpeed;
-    HealthComponent healthComponent;
+    public float maxHealth;
+    public float currentHealth;
+
+    public virtual void Start()
+    {
+        currentHealth = maxHealth;
+    }
 }

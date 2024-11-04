@@ -6,10 +6,14 @@ public class GameScene : MonoBehaviour
 {
     public float dt;
     public PlayerData playerData;
-    void Start()
+    private void Awake()
     {
         dt = Time.deltaTime;
         GameApp.Instance.Init();
+    }
+    void Start()
+    {
+        
     }
 
 
