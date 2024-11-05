@@ -7,13 +7,12 @@ public class HealthComponent : MonoBehaviour
 {
     public GameObject healthBar;
     public Image healthBarImage;
-    public EntityData entityData;
+    public Entity entityData;
     public float value;
     private void Start()
     {
-        entityData = GetComponent<EntityData>();
-        if(GameApp.gameEventSystem == null) { Debug.Log("ex"); }
-        GameApp.gameEventSystem.AddEvent("onHealthChange", OnHealthChangeTest);
+        entityData = GetComponent<Entity>();
+        GameApp.gameEventSystem.AddEvent(TempEventDefine.onHealthChange, OnHealthChangeTest);
         //这下必须要写viewsystem了
     }
 

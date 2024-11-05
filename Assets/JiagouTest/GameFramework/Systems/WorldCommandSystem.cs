@@ -5,14 +5,14 @@ using UnityEngine;
 //世界命令系统，适用于按照一定流程完成任务的要求，自行创建command脚本写逻辑，再加进该system队列执行
 public class WorldCommandSystem : BaseSystem
 {
-    private Queue<BaseCommand> willDoCommandQueue;//将要执行的命令队列
-    private Stack<BaseCommand> unDoStack;//不一定用得上
-    private BaseCommand current;//当前所执行的命令
+    private Queue<WorldBaseCommand> willDoCommandQueue;//将要执行的命令队列
+    private Stack<WorldBaseCommand> unDoStack;//不一定用得上
+    private WorldBaseCommand current;//当前所执行的命令
 
     public WorldCommandSystem()
     {
-        willDoCommandQueue = new Queue<BaseCommand>();
-        unDoStack = new Stack<BaseCommand>();
+        willDoCommandQueue = new Queue<WorldBaseCommand>();
+        unDoStack = new Stack<WorldBaseCommand>();
     }
 
     public bool IsRunningCommand
@@ -20,7 +20,7 @@ public class WorldCommandSystem : BaseSystem
         get { return current != null; }
     }
 
-    public void AddCommand(BaseCommand command)
+    public void AddCommand(WorldBaseCommand command)
     {
         willDoCommandQueue.Enqueue(command);
         unDoStack.Push(command);
@@ -33,7 +33,7 @@ public class WorldCommandSystem : BaseSystem
             if (willDoCommandQueue.Count > 0)
             {
                 current = willDoCommandQueue.Dequeue();
-                current.Excecute();
+                current.Do();
             }
         }
         else

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameScene : MonoBehaviour
 {
     public float dt;
-    public PlayerData playerData;
+    public Player playerData;
     private void Awake()
     {
         dt = Time.deltaTime;

@@ -60,25 +60,54 @@
   <ItemGroup>
     <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\PlayerMoveCommand.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\GameManage\GameScene.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\Components\TimeShowComponent.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Systems\InputSystem.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\PlayerTansheCommand.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Common\Singleton.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Bases\BaseView.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\PlayerXiarenCommand.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Systems\CameraSystem.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\WorldCommands\PlayerTimeStopCommand.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Components\HealthComponent.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\GameManage\GameApp.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Bases\BaseSystem.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\TipScripts\EventDefine.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Systems\GameEventSystem.cs" />
-    <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\PlayerData.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Systems\MapSystem.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Controllers\ViewController.cs" />
-    <Compile Include="Assets\JiagouTest\GameFramework\Bases\EntityData.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Systems\WorldCommandSystem.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\TipScripts\TempEventDefine.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Systems\ViewSystem.cs" />
     <Compile Include="Assets\JiagouTest\GameFramework\Bases\BaseCommand.cs" />
-    <Compile Include="Assets\JiagouTest\GameFramework\Bases\EntityController.cs" />
-    <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\PlayerController.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\IPlayer.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\Bases\IEntity.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\PlayerScripts\Player.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\Bases\Entity.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\Bases\EntityBaseCommand.cs" />
+    <Compile Include="Assets\JiagouTest\GameFramework\Bases\WorldBaseCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
